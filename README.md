@@ -10,9 +10,7 @@ In the context of AWI, this library is used by catalyst-sdwan-grpc repository fo
 CRUD operation available on following functions for Cisco Catalyst SDWAN.
 
 ```go
-    Login(ctx context.Context, username, password string) error
-    GetToken() string
-    SetToken(token string)
+  
     ACL() ACL
     Connection() Connection
     Device() Device
@@ -25,11 +23,15 @@ CRUD operation available on following functions for Cisco Catalyst SDWAN.
     URLFiltering() URLFiltering
     URLDenylist() URLDenylist
     URLAllowlist() URLAllowlist
+    -------------------
+    Login(ctx context.Context, username, password string) error
+    GetToken() string
+    SetToken(token string)
 ```
 
 ## Interface Definition
 
-https://github.com/app-net-interface/catalyst-sdwan-app-client/blob/develop/vmanage/vmanage.go
+https://github.com/app-net-interface/catalyst-sdwan-app-client/blob/main/vmanage/vmanage.go
 
 ## Contributing
 
